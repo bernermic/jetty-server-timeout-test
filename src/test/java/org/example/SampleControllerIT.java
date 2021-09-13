@@ -16,7 +16,7 @@ class SampleControllerIT {
 
     @Test
     void timeout() {
-        Assertions.assertTrue(testRestTemplate.getForEntity("/timeout", String.class).getStatusCode()
+        Assertions.assertTrue(testRestTemplate.getForEntity("/", String.class).getStatusCode()
             .is5xxServerError(), "Expected 5xxServerError Status");
     }
 }
