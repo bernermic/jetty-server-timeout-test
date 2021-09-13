@@ -1,0 +1,9 @@
+server:
+  jetty:
+    connection-idle-timeout: 5s
+logging:
+  level:
+    org:
+      eclipse:
+        jetty:
+          io: DEBUG
